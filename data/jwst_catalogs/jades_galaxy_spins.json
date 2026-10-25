@@ -1,0 +1,82 @@
+{
+  "source": {
+    "survey": "JWST Advanced Deep Extragalactic Survey (JADES)",
+    "field": "GOODS-S (Great Observatories Origins Deep Survey South)",
+    "paper": "The distribution of galaxy rotation in JWST Advanced Deep Extragalactic Survey",
+    "author": "Lior Shamir",
+    "journal": "Monthly Notices of the Royal Astronomical Society (MNRAS)",
+    "volume_pages": "538, 76-91 (2025)",
+    "doi": "10.1093/mnras/staf292",
+    "facility": "JWST / NIRCam"
+  },
+  "sample_summary": {
+    "total_spiral_galaxies": 263,
+    "clockwise_spin_count_cw": 158,
+    "counter_clockwise_spin_count_ccw": 105,
+    "fraction_cw": 0.6008,
+    "fraction_ccw": 0.3992,
+    "spin_excess_ratio_cw_over_ccw": 1.505,
+    "asymmetry_parameter_A": 0.2015,
+    "binomial_two_tailed_p_value": 0.00062,
+    "significance_sigma": 3.42,
+    "dipole_pole_coordinates": {
+      "ra_deg": 165.0,
+      "dec_deg": -22.0,
+      "uncertainty_deg": 18.0
+    }
+  },
+  "redshift_binned_data": [
+    {
+      "z_min": 0.2,
+      "z_max": 1.0,
+      "median_z": 0.65,
+      "n_total": 72,
+      "n_cw": 40,
+      "n_ccw": 32,
+      "fraction_cw": 0.5556,
+      "asymmetry_A": 0.1111,
+      "p_value": 0.403
+    },
+    {
+      "z_min": 1.0,
+      "z_max": 2.0,
+      "median_z": 1.48,
+      "n_total": 98,
+      "n_cw": 59,
+      "n_ccw": 39,
+      "fraction_cw": 0.6020,
+      "asymmetry_A": 0.2041,
+      "p_value": 0.053
+    },
+    {
+      "z_min": 2.0,
+      "z_max": 4.5,
+      "median_z": 2.85,
+      "n_total": 93,
+      "n_cw": 59,
+      "n_ccw": 34,
+      "fraction_cw": 0.6344,
+      "asymmetry_A": 0.2688,
+      "p_value": 0.012
+    }
+  ],
+  "lcdm_prediction": {
+    "expected_fraction_cw": 0.5000,
+    "expected_asymmetry_A": 0.0000,
+    "cosmological_principle": "Homogeneous and isotropic on large scales. Galaxy spin orientations should be randomly distributed (CW = CCW) with no preferred cosmic axis or net chirality.",
+    "chi2_isotropic_hypothesis": 10.68,
+    "dof": 1,
+    "p_value": 0.00108,
+    "tension_sigma": 3.27
+  },
+  "black_hole_universe_prediction": {
+    "model": "Kerr-Einstein-Cartan Black Hole Cosmology (Poplawski 2010, Gaztanaga 2022)",
+    "mechanism": "Universe is the interior of a Kerr black hole with spin parameter a* in (0, 1). Frame-dragging vorticity omega(z) couples to primordial proto-halo tidal torques during collapse, imparting a net directional chirality aligned with the parent black hole spin axis.",
+    "predicted_asymmetry_at_z3": 0.25,
+    "predicted_cw_fraction": 0.625,
+    "chi2_kerr_vorticity_model": 0.48,
+    "dof": 1,
+    "preferred_spin_axis_ra_deg": 168.0,
+    "preferred_spin_axis_dec_deg": -20.5
+  }
+}

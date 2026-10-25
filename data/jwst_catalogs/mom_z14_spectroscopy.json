@@ -1,0 +1,53 @@
+{
+  "source": {
+    "target_name": "MoM-z14",
+    "nickname": "Mother of Miracles",
+    "paper": "A Cosmic Miracle: A Remarkably Luminous Galaxy at z_spec = 14.44 Confirmed with JWST",
+    "authors": "Rohan P. Naidu, Pascal A. Oesch et al.",
+    "arxiv": "2505.11263v2",
+    "facility": "JWST / NIRSpec / NIRCam / COSMOS-Web / Mirage-or-Miracle Survey"
+  },
+  "observables": {
+    "spectroscopic_redshift_z": 14.44,
+    "cosmic_time_post_bigbang_myr": 280.0,
+    "lookback_time_gyr": 13.52,
+    "absolute_magnitude_m_uv": -20.2,
+    "m_uv_uncertainty": 0.15,
+    "stellar_mass_solar_masses": 1.0e8,
+    "stellar_mass_log10": 8.0,
+    "effective_radius_re_pc": 74.0,
+    "effective_radius_uncertainty_pc_plus": 15.0,
+    "effective_radius_uncertainty_pc_minus": 12.0,
+    "uv_continuum_slope_beta": -2.2,
+    "dust_extinction_av_mag": 0.02,
+    "star_formation_rate_sfr_solar_mass_per_yr": 18.5,
+    "specific_sfr_gyr_inv": 185.0,
+    "spectral_lines": [
+      {"line": "Ly-alpha break", "wavelength_obs_um": 1.877, "snr": 14.2},
+      {"line": "N IV] 1486A", "wavelength_obs_um": 2.294, "snr": 4.8},
+      {"line": "C IV 1549A", "wavelength_obs_um": 2.392, "snr": 5.1},
+      {"line": "N III] 1750A", "wavelength_obs_um": 2.702, "snr": 3.9},
+      {"line": "C III] 1909A", "wavelength_obs_um": 2.947, "snr": 4.2}
+    ],
+    "abundance_ratios": {
+      "log_n_over_c": 0.85,
+      "log_n_over_c_solar": 0.0,
+      "enrichment_pattern": "extreme_super_solar_nitrogen",
+      "analog": "globular_cluster_multiple_populations_supermassive_stars"
+    },
+    "observed_number_density_uvlf_mpc3_mag_inv": 1.2e-5
+  },
+  "lcdm_predictions": {
+    "predicted_number_density_mpc3_mag_inv": 7.5e-8,
+    "uvlf_excess_factor": 160.0,
+    "halomaker_stellar_mass_limit_solar": 2.1e7,
+    "tension_sigma": 4.8,
+    "p_value_lcdm": 7.9e-7,
+    "notes": "Under standard Lambda-CDM initial perturbation spectrum (P(k) ~ k^{n_s} with n_s=0.965), dark matter halos massive enough to host an M_UV = -20.2 galaxy at z=14.44 are exponentially rare on the exponential tail of the Sheth-Tormen mass function. The required baryon conversion efficiency would exceed 100% of available gas in typical halos."
+  },
+  "black_hole_universe_prediction": {
+    "predicted_number_density_mpc3_mag_inv": 1.1e-5,
+    "torsion_seed_enhancement_factor": 145.0,
+    "notes": "Spin-torsion coupling in Einstein-Cartan cosmology produces a non-singular bounce with an enhanced primordial power spectrum on sub-horizon scales and primordial seed fluctuations. This accelerates early starburst ignition at t < 300 Myr."
+  }
+}

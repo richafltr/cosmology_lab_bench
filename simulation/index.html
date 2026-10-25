@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmological Evolution: From Black Hole Bounce to Modern Humans | Three.js Simulation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Three.js and OrbitControls -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <!-- HUD Telemetry Overlay -->
+  <div id="hud-overlay">
+    <div class="hud-header">
+      <div class="badge">COSMOLOGY LAB BENCH</div>
+      <h1>Universe Evolution: Black Hole Interior Cosmology</h1>
+      <p class="subtitle">JWST Observational Evidence Synthesis: XLSSC 122 &bull; MoM-z14 &bull; JADES Galaxy Spins</p>
+    </div>
+
+    <div class="telemetry-panel">
+      <div class="telemetry-card">
+        <span class="label">CURRENT COSMIC TIME</span>
+        <span class="value" id="disp-time">t = 0 s (Singularity Averted)</span>
+      </div>
+      <div class="telemetry-card">
+        <span class="label">REDSHIFT</span>
+        <span class="value" id="disp-redshift">z &rarr; &infin;</span>
+      </div>
+      <div class="telemetry-card">
+        <span class="label">HUBBLE HORIZON / SCHWARZSCHILD</span>
+        <span class="value highlight" id="disp-horizon">R_s / R_H = 1.000</span>
+      </div>
+      <div class="telemetry-card">
+        <span class="label">KERR SPIN PARAMETER</span>
+        <span class="value" id="disp-spin">a* = 0.68</span>
+      </div>
+    </div>
+
+    <!-- Active Epoch Description Card -->
+    <div class="epoch-card" id="epoch-card">
+      <h2 id="epoch-title">Epoch 0: Kerr Black Hole Interior & Torsion Bounce</h2>
+      <p id="epoch-desc">
+        The universe originates from an Einstein-Cartan spin-torsion bounce inside a parent rotating Kerr black hole.
+        Relic frame-dragging vorticity establishes a preferred cosmic spin axis.
+      </p>
+      <div class="epoch-physics-grid" id="epoch-physics">
+        <div class="physics-item"><strong>Mechanism:</strong> Non-singular Torsion Bounce</div>
+        <div class="physics-item"><strong>Density:</strong> &rho; ~ 10<sup>52</sup> g/cm<sup>3</sup></div>
+      </div>
+    </div>
+
+    <!-- Interactive Time-Skip Controls -->
+    <div class="controls-panel">
+      <div class="slider-container">
+        <label for="time-scrubber">Time-Skip Timeline (Big Bang &rarr; Modern Humans)</label>
+        <input type="range" id="time-scrubber" min="0" max="5" step="0.01" value="0">
+      </div>
+      
+      <div class="epoch-buttons">
+        <button class="epoch-btn active" data-epoch="0">0. Bounce (t=0)</button>
+        <button class="epoch-btn" data-epoch="1">1. Cosmic Dawn</button>
+        <button class="epoch-btn" data-epoch="2">2. MoM-z14 (280 Myr)</button>
+        <button class="epoch-btn" data-epoch="3">3. JADES Spins</button>
+        <button class="epoch-btn" data-epoch="4">4. XLSSC 122 Lens</button>
+        <button class="epoch-btn" data-epoch="5">5. Modern Humans</button>
+      </div>
+
+      <div class="playback-controls">
+        <button id="btn-play-pause" class="action-btn">Auto Time-Skip: Play</button>
+        <button id="btn-reset-cam" class="action-btn secondary">Reset Camera</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/epochs.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

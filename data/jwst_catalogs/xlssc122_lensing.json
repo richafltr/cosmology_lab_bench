@@ -1,0 +1,44 @@
+{
+  "source": {
+    "target_name": "XLSSC 122",
+    "paper": "JWST Discovery of Strong Lensing from a Galaxy Cluster at Cosmic Noon: Giant Arcs and a Highly Concentrated Core of XLSSC 122",
+    "authors": "Kyle Finner et al.",
+    "doi": "10.3847/2041-8213/ae1d80",
+    "facility": "JWST / NIRCam / HST / XMM-Newton"
+  },
+  "observables": {
+    "redshift_z": 1.98,
+    "lookback_time_gyr": 10.42,
+    "cosmic_time_post_bigbang_gyr": 3.38,
+    "einstein_radius_arcsec": 4.1,
+    "einstein_radius_kpc": 34.6,
+    "source_redshift_z": 3.95,
+    "giant_tangential_arcs_count": 3,
+    "nfw_parameters": {
+      "m_200_crit_solar_masses": 3.0e14,
+      "m_200_uncertainty": 0.4e14,
+      "c_200_concentration": 6.3,
+      "c_200_uncertainty": 0.6,
+      "r_200_kpc": 680.0,
+      "r_s_scale_radius_kpc": 107.9
+    },
+    "intracluster_light": {
+      "fraction_within_100kpc": 0.18,
+      "alignment_angle_offset_deg": 4.2,
+      "morphology": "virialized_relaxed_core"
+    }
+  },
+  "lcdm_predictions": {
+    "expected_c_200_duffy2008": 3.2,
+    "expected_c_200_diemer2019": 3.4,
+    "expected_c_200_uncertainty": 0.4,
+    "concentration_tension_sigma": 3.9,
+    "p_value_lcdm_assembly": 0.00048,
+    "notes": "Standard Lambda-CDM hierarchical assembly models predict clusters at z~2 are young and unrelaxed with low concentration. The high concentration (c_200=6.3) and mature ICL indicate an accelerated early structure formation timeline."
+  },
+  "black_hole_universe_prediction": {
+    "expected_c_200_spin_torsion_seed": 6.1,
+    "predicted_collapse_redshift_z_coll": 7.8,
+    "notes": "In a universe born from an Einstein-Cartan torsion bounce inside a rotating black hole, early primordial relic seed density accelerates initial collapse, shifting z_coll earlier and resulting in compact, hyper-concentrated dark matter cores at cosmic noon."
+  }
+}

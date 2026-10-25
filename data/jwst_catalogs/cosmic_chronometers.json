@@ -1,0 +1,40 @@
+{
+  "source": {
+    "description": "Cosmic chronometers H(z) measurements, Planck 2018 parameters, and Schwarzschild horizon coincidence data",
+    "references": [
+      "Moresco et al. 2022 (Cosmic Chronometers)",
+      "Planck 2018 Final Results (A&A 2020)",
+      "Pathria 1972, Stuckey 1994, Gaztanaga 2022 (Hubble-Schwarzschild equivalence)"
+    ]
+  },
+  "standard_parameters": {
+    "H0_kms_mpc": 70.0,
+    "H0_uncertainty": 1.5,
+    "Omega_m": 0.315,
+    "Omega_lambda": 0.685,
+    "Omega_b": 0.049,
+    "sigma8": 0.811,
+    "ns": 0.965,
+    "speed_of_light_m_s": 299792458,
+    "G_m3_kg_s2": 6.6743e-11
+  },
+  "hubble_schwarzschild_coincidence": {
+    "description": "For a spatially flat universe (Omega_tot = 1), the total gravitational mass inside the Hubble sphere equals the mass required for a Schwarzschild black hole of radius R_H.",
+    "hubble_radius_Gly": 13.97,
+    "hubble_radius_meters": 1.32e26,
+    "enclosed_critical_mass_kg": 8.91e52,
+    "schwarzschild_radius_for_enclosed_mass_meters": 1.32e26,
+    "ratio_R_s_over_R_H": 1.000,
+    "significance": "Exact mathematical identity: R_s = 2GM/c^2 = 2G (4/3 pi R_H^3 rho_c) / c^2 = (8 pi G rho_c / 3) (R_H^3 / c^2) = (H_0^2) (R_H^3 / c^2) = R_H"
+  },
+  "h_z_data": [
+    {"z": 0.07, "H": 69.0, "sigma_H": 19.6},
+    {"z": 0.20, "H": 72.9, "sigma_H": 29.6},
+    {"z": 0.35, "H": 82.7, "sigma_H": 8.4},
+    {"z": 0.57, "H": 96.8, "sigma_H": 3.4},
+    {"z": 0.88, "H": 117.0, "sigma_H": 23.4},
+    {"z": 1.30, "H": 168.0, "sigma_H": 17.0},
+    {"z": 1.98, "H": 204.0, "sigma_H": 22.0},
+    {"z": 2.34, "H": 222.0, "sigma_H": 7.0}
+  ]
+}

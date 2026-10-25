@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cosmology-lab-bench"
+version = "0.1.0"
+description = "A dry laboratory RL benchmark for testing AI scientific reasoning on the Black Hole Universe thought experiment using JWST evidence"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "richafltr" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "gymnasium>=0.29.0",
+    "numpy>=1.22.0",
+    "scipy>=1.9.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["cosmology_lab*", "agents*"]

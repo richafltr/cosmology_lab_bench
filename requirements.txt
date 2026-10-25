@@ -1,0 +1,6 @@
+# Core environment runs with Python standard library (zero required external dependencies)
+# Optional enhancements:
+gymnasium>=0.29.0
+numpy>=1.22.0
+scipy>=1.9.0
+pytest>=7.0
